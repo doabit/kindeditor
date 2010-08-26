@@ -2,7 +2,7 @@ class KindeditorController < ApplicationController
   protect_from_forgery :except => :upload  
 
     def upload  
-      @image = KindEditorImage.new(:data => params[:imgFile])  
+      @image = KindeditorImage.new(:data => params[:imgFile])  
       if @image.save  
         render :text => {"error" => 0, "url" => @image.data.url}.to_json  
       else  
@@ -12,7 +12,7 @@ class KindeditorController < ApplicationController
 
     def images_list 
       
-      @images = KindEditorImage.order(order_param)
+      @images = KindeditorImage.order(order_param)
       @json = []  
       for image in @images  
         temp =  %Q/{"filesize" : #{image.data.size},  
