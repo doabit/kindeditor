@@ -24,6 +24,8 @@ class KindeditorController < ApplicationController
         render :text => ("{\"file_list\":[" << @json.join(", ") << "]}")  
     end
     
+    private
+    
     def order_param
      params[:order] || "data_file_name"
     end

@@ -1,0 +1,20 @@
+===============================================================================
+
+The generator had installed kindeditor to your application's public path:
+
+  1. If you want to use kindeditor,you can add kindeditor helper to layout,and add a id "kindeditor" to your textarea:
+     For example:
+     in application.html.erb 
+      <%=kindeditor_javacript_include_tag%>
+    
+     in _form.html.erb
+      <%= f.text_area :body,:id => "kindeditor" %>
+
+  2. Because the kindeditor use paperclip to upload image,so make sure your Gemfile have add paperclip.
+     For example:
+
+       gem 'paperclip'
+
+  3. If you wnat to modify the kindeditor config,you can find it in public/kindeditor/kindeditor_config.js:
+
+===============================================================================
