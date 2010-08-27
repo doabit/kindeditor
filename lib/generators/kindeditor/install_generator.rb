@@ -16,7 +16,12 @@ module Kindeditor
       copy_controller
       copy_model
     end
-
+    
+    def create_rotes
+      route "post 'kindeditor/upload'"
+      route "get 'kindeditor/images_list'"
+    end
+    
     def read_me
       readme "README" if behavior == :invoke
     end
