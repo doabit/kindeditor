@@ -9,19 +9,27 @@ Require:
 ---------------
 - Rails3
 - Paperclip(if you use mongoid,make sure your paperclip can work in mongoid,you can edit paperclip.rb in config/initializers)
+
   Paperclip.options[:log] = false  
 
 Install
 ---------------
 - As a plugin 
+
   rails plugin install git://github.com/doabit/kinkdeditor.git
 
+- As a gem
+  
+   sudo gem install kindeditor
+
 - copy files .
+
   rails g kindeditor:install
 
 Usage
 --------------
 - kindeditor helper to layout that you want to use it
+
   <%=kindeditor_javacript_include_tag%>
 
 - add a id "kindeditor" to your textarea
@@ -45,7 +53,9 @@ Support CarrierWave
 Example Use:
 ---------------
 1. Create CRUD for post
+
    rails generate scaffold post title:string body:text
+  
    Run Migrations
 
 2. rake db:migrate
@@ -55,6 +65,7 @@ Example Use:
     <%=kindeditor_javacript_include_tag%>
   
 4. Modify views/posts/_form.html.erb
+
     <%= f.text_area :body,:id => "kindeditor" %>
 
 
