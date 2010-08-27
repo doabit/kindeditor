@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{kindeditor}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["doabit"]
@@ -19,8 +19,10 @@ Gem::Specification.new do |s|
     "MIT-LICENSE",
      "README.md",
      "Rakefile",
+     "VERSION",
      "init.rb",
      "install.rb",
+     "kindeditor.gemspec",
      "lib/generators/USAGE",
      "lib/generators/kindeditor/install_generator.rb",
      "lib/generators/kindeditor/templates/README",
@@ -197,6 +199,8 @@ Gem::Specification.new do |s|
      "lib/generators/kindeditor/templates/kindeditor/skins/default/default.gif",
      "lib/generators/kindeditor/templates/mongoid/kindeditor_image.rb",
      "lib/kindeditor.rb",
+     "pkg/kindeditor-0.0.1.gem",
+     "pkg/kinkdeditor-0.0.1.gem",
      "spec/generators/install_generaor_spec.rb",
      "spec/kindeditor_spec.rb",
      "spec/spec.opts",
@@ -219,12 +223,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
+      s.add_development_dependency(%q<paperclip>, [">= 2.3.3"])
     else
-      s.add_dependency(%q<rspec>, [">= 1.2.9"])
+      s.add_dependency(%q<paperclip>, [">= 2.3.3"])
     end
   else
-    s.add_dependency(%q<rspec>, [">= 1.2.9"])
+    s.add_dependency(%q<paperclip>, [">= 2.3.3"])
   end
 end
 
