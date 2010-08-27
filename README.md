@@ -1,9 +1,9 @@
-# Rails KindEditor integration plugin with paperclip support for rails3 Rc,it supports  active_record and mongoid!
+Rails KindEditor integration plugin with paperclip support for rails3 Rc,it supports  active_record and mongoid!
 
 [Kindeditor](http://www.kindsoft.net "Kindeditor") is a open source HTML visual editor ,it can work good in  IE, Firefox, Chrome, Safari.and it has become one of the most popular editor in China.
 
 KindEditor version: 3.5.1 [Kindeditor](http://kindeditor.googlecode.com/files/kindeditor-3.5.1-zh_CN.zip "Kindeditor")
-----------------------------------------------------------------------
+
 
 Require:
 ---------------
@@ -56,9 +56,9 @@ Example Use:
 4. Modify views/posts/_form.html.erb
     <%= f.text_area :body,:id => "kindeditor" %>
 
----------------------
-Contributors
 
+Contributors
+---------------------
 any sugestions? doinsist at gmail.com 
 
 released under the MIT license
