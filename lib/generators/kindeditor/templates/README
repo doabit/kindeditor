@@ -15,6 +15,6 @@ The generator had installed kindeditor to your application's public path:
 
        gem 'paperclip'
 
-  3. If you wnat to modify the kindeditor config,you can find it in public/kindeditor/kindeditor_config.js:
+  3. If you want to modify the kindeditor config,you can find it in public/kindeditor/kindeditor_config.js:
 
 ===============================================================================

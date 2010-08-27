@@ -1,8 +1,10 @@
 class KindeditorImage
   include Mongoid::Document
+  include Mongoid::Timestamps
+  include Paperclip
   field :data_file_name
   field :data_content_type
-  field :data_file_size
+  field :data_file_size,:type => Integer
   field :data_updated_at,:type => DateTime
   
   before_create :randomize_file_name
