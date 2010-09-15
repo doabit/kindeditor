@@ -2,7 +2,7 @@ Rails KindEditor integration plugin with paperclip support for rails3 Rc,it supp
 --------------
 [Kindeditor](http://www.kindsoft.net "Kindeditor") is a open source HTML visual editor ,it can work good in  IE, Firefox, Chrome, Safari.and it has become one of the most popular editor in China.
 
-KindEditor version: 3.5.1 [Kindeditor](http://kindeditor.googlecode.com/files/kindeditor-3.5.1-zh_CN.zip "Kindeditor")
+KindEditor version: 3.5.1 zh-cn [Kindeditor](http://kindeditor.googlecode.com/files/kindeditor-3.5.1-zh_CN.zip "Kindeditor")
 
 
 Require:
@@ -16,7 +16,7 @@ Install
 ---------------
 - As a plugin 
 
-  rails plugin install git://github.com/doabit/kinkdeditor.git
+  rails plugin install git://github.com/doabit/kindeditor.git
 
 - As a gem
   
