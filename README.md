@@ -44,6 +44,16 @@ The install generator will copy kindeditor_controller.rb to app/controllers , ki
 
 If you want to mondify the Kindeditor items,you can open public/javascripts/kindeditor/kindeditor_config.js,and modify it for yourself.
 
+update:
+
+if you want to use for diffrent layout and you want to custom yourself,you can add args for kindeditor_javacript_include_tag
+and you can add cache option to it.defaut :cache=>false
+eg:
+
+<%=kindeditor_javacript_include_tag("kindeditor/my_config","cosutom",:cache=>true)%>
+
+then it will use your config and will not use defauot config in kindeditor folder.
+
 TODOs
 --------------
 Add images paginate
