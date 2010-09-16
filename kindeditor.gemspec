@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{kindeditor}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["doabit"]
-  s.date = %q{2010-08-27}
+  s.date = %q{2010-09-16}
   s.description = %q{Rails KindEditor integration plugin with paperclip support for rails3 Rc,it supports active_record and mongoid!}
   s.email = %q{doinsist@gmail.com}
   s.extra_rdoc_files = [
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "init.rb",
      "install.rb",
+     "kindeditor-0.0.2.gem",
      "kindeditor.gemspec",
      "lib/generators/USAGE",
      "lib/generators/kindeditor/install_generator.rb",
@@ -200,6 +201,7 @@ Gem::Specification.new do |s|
      "lib/generators/kindeditor/templates/mongoid/kindeditor_image.rb",
      "lib/kindeditor.rb",
      "pkg/kindeditor-0.0.1.gem",
+     "pkg/kindeditor-0.0.2.gem",
      "pkg/kinkdeditor-0.0.1.gem",
      "spec/generators/install_generaor_spec.rb",
      "spec/kindeditor_spec.rb",
@@ -207,7 +209,7 @@ Gem::Specification.new do |s|
      "spec/spec_helper.rb",
      "uninstall.rb"
   ]
-  s.homepage = %q{http://github.com/doabit/kinkdeditor}
+  s.homepage = %q{http://github.com/doabit/kindeditor}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
